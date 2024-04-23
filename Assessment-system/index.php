@@ -29,11 +29,11 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="header">
 <div class="row">
 <div class="col-lg-6">
-<span class="logo">Test Your Skill</span></div>
+<span class="logo">Learning Assessment</span></div>
 <div class="col-md-2 col-md-offset-4">
 <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
 <!--sign in modal start-->
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="myModal"> 
   <div class="modal-dialog">
     <div class="modal-content title1">
       <div class="modal-header">
