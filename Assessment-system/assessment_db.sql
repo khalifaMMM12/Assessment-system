@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 09:44 AM
+-- Generation Time: May 07, 2024 at 01:58 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -105,6 +105,13 @@ CREATE TABLE `history` (
   `wrong` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `history`
+--
+
+INSERT INTO `history` (`email`, `eid`, `score`, `level`, `sahi`, `wrong`, `date`) VALUES
+('Khalifasitemsn12@gmail.com', '5589741f9ed52', -4, 5, 1, 6, '2024-05-06 23:44:57');
 
 -- --------------------------------------------------------
 
@@ -273,6 +280,13 @@ CREATE TABLE `rank` (
   `time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Dumping data for table `rank`
+--
+
+INSERT INTO `rank` (`email`, `score`, `time`) VALUES
+('Khalifasitemsn12@gmail.com', -7, '2024-05-06 23:44:57');
+
 -- --------------------------------------------------------
 
 --
@@ -282,7 +296,7 @@ CREATE TABLE `rank` (
 CREATE TABLE `user` (
   `name` varchar(50) NOT NULL,
   `gender` varchar(5) NOT NULL,
-  `college` varchar(100) NOT NULL,
+  `School` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
   `mob` bigint(20) NOT NULL,
   `password` varchar(50) NOT NULL
@@ -292,7 +306,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES
+INSERT INTO `user` (`name`, `gender`, `School`, `email`, `mob`, `password`) VALUES
 ('Mark Zukarburg', 'M', 'Stanford', 'ceo@facebook.com', 987654321, 'e10adc3949ba59abbe56e057f20f883e'),
 ('Khalifa', 'M', 'Al-Qalam', 'Khalifasitemsn12@gmail.com', 7065419600, '41a21121f8ae768a7014619a79950b3c'),
 ('User', 'M', 'cimt', 'user@user.com', 11, 'e10adc3949ba59abbe56e057f20f883e');
