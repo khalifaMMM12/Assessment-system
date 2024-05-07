@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Project Worlds || TEST YOUR SKILL </title>
+<title>Learning Assessment </title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -31,7 +31,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="col-lg-6">
 <span class="logo">Learning Assessment</span></div>
 <div class="col-md-2 col-md-offset-4">
-<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Signin</b></span></a></div>
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Login</b></span></a></div>
 <!--sign in modal start-->
 <div class="modal fade" id="myModal"> 
   <div class="modal-dialog">
@@ -82,8 +82,8 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="bg1">
 <div class="row">
 
-<div class="col-md-7"></div>
-<div class="col-md-4 panel">
+<!-- <div class="col-md-7"></div> -->
+<div class="col-md-8 col-md-offset-2 signin-container">
 <!-- sign in form begins -->  
   <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
 <fieldset>
@@ -167,7 +167,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 </fieldset>
 </form>
 </div><!--col-md-6 end-->
-</div></div>
+</div>
 </div><!--container end-->
 
 <!--Footer start-->
@@ -178,12 +178,12 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
 <div class="col-md-3 box">
-<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+<a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 </div>
 <div class="col-md-3 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
-<!-- Modal For Developers-->
-<div class="modal fade title1" id="developers">
+<!-- Modal For Developer-->
+<div class="modal fade title1" id="Developer">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

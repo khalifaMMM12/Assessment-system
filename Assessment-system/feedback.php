@@ -146,13 +146,13 @@ You can send us your feedback through e-mail on the following e-mail id:<br />
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
 <div class="col-md-3 box">
-<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+<a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 
 </div>
 <div class="col-md-3 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
-<!-- Modal For Developers-->
-<div class="modal fade title1" id="developers">
+<!-- Modal For Developer-->
+<div class="modal fade title1" id="Developer">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

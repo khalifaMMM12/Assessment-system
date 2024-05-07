@@ -29,8 +29,8 @@ min-height:535px;
 
 .panel{
 border-color:#eee;
-margin:40px;
-padding:20px;
+/* margin:40px;
+padding:20px; */
 font: 15px "Century Gothic", "Times Roman", sans-serif;
 }
 
@@ -73,20 +73,48 @@ padding:10px;
 width:100px;
 }
 
+/* Sign-in form styling */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-.sub
-{
-width:100%;
-background-color:#9acd32;
-font-size:20px;
-padding:2px;
-margin-top:15px;
-margin-right:20px;
-}
-.sub:hover
-{
-color:#fff;
-}
+.form-horizontal {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+  
+  .sub {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .sub:hover {
+    background-color: #45a049;
+  }
+  
 
 .footer
 {
@@ -95,6 +123,7 @@ text-align:center;
 border-top:1px solid;
 border-color:#323232;
 background-color:#202020;
+height: 50px;
 }
 .footer a
 {

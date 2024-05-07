@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Project Worlds || TEST YOUR SKILL </title>
+<title>Learning Assessment</title>
 <link  rel="stylesheet" href="css/bootstrap.min.css"/>
  <link  rel="stylesheet" href="css/bootstrap-theme.min.css"/>    
  <link rel="stylesheet" href="css/main.css">
@@ -255,12 +255,12 @@ echo '</table></div></div>';}
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
 <div class="col-md-3 box">
-<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+<a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 </div>
 <div class="col-md-3 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
-<!-- Modal For Developers-->
-<div class="modal fade title1" id="developers">
+<!-- Modal For Developer-->
+<div class="modal fade title1" id="Developer">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
