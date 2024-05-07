@@ -28,7 +28,7 @@ include_once 'dbConnection.php';
 <div class="header">
 <div class="row">
 <div class="col-lg-6">
-<span class="logo">Test Your Skill</span></div>
+<span class="logo">Learning Assessment</span></div>
 <div class="col-md-4 col-md-offset-2">
  <?php
  include_once 'dbConnection.php';
@@ -60,7 +60,7 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><b>Netcamp</b></a>
+      <a class="navbar-brand" href="#"><b></b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

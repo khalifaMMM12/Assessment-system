@@ -24,7 +24,7 @@
 <!--header start-->
 <div class="row header">
 <div class="col-lg-6">
-<span class="logo">Test Your Skill</span></div>
+<span class="logo">Learning Assessment</span></div>
 <div class="col-md-2">
 </div>
 <div class="col-md-4">
