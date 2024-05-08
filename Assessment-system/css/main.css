@@ -3,7 +3,7 @@ body
 overflow-x:hidden;
 width:100%;
 font: 15px "Century Gothic", "Times Roman", sans-serif;
-background:#eee;
+background:#ffffff;
 min-height:550px;
 background-attachment:fixed;
 }
@@ -28,9 +28,9 @@ min-height:535px;
 	}
 
 .panel{
-border-color:#eee;
-/* margin:40px;
-padding:20px; */
+border-color:#252424;
+margin:20px;
+padding:20px;
 font: 15px "Century Gothic", "Times Roman", sans-serif;
 }
 
@@ -82,7 +82,7 @@ width:100px;
   }
 
 .form-horizontal {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -140,6 +140,15 @@ color:#9acd32;
 border-top:2px solid;
 border-color:orange;
 
+}
+
+.nav{
+  font-size:15px;
+text-align:center;
+border-top:1px solid;
+border-color:#323232;
+background-color:#202020;
+height: 50px;
 }
 
 .box

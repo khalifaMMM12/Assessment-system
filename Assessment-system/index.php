@@ -83,7 +83,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <div class="row">
 
 <!-- <div class="col-md-7"></div> -->
-<div class="col-md-8 col-md-offset-2 signin-container">
+<div class="col-md-4 panel">
 <!-- sign in form begins -->  
   <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()" method="POST">
 <fieldset>

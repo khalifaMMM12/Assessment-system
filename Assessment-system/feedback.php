@@ -89,19 +89,16 @@ echo '<a href="logout.php?q=feedback.php" class="pull-right sub1 btn title3"><sp
 <div class="bg1">
 <div class="row">
 <div class="col-md-3"></div>
-<div class="col-md-6 panel" style="background-image:url(image/bg1.jpg); min-height:430px;">
+<div class="col-md-6 panel" style="background-color:gray; min-height:430px;">
 <h2 align="center" style="font-family:'typo'; color:#000066">FEEDBACK/REPORT A PROBLEM</h2>
 <div style="font-size:14px">
 <?php if(@$_GET['q'])echo '<span style="font-size:18px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;'.@$_GET['q'].'</span>';
 else
 {echo' 
-You can send us your feedback through e-mail on the following e-mail id:<br />
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-10">
-<a href="mailto:chiraggoel.53784@gmail.com" style="color:#000000">sunnygkp10@gmail.com</a><br /><br />
 </div><div class="col-md-1"></div></div>
-<p>Or you can directly submit your feedback by filling the enteries below:-</p>
 <form role="form"  method="post" action="feed.php?q=feedback.php">
 <div class="row">
 <div class="col-md-3"><b>Name:</b><br /><br /><br /><b>Subject:</b></div>
