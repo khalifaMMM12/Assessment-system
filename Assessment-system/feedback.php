@@ -137,16 +137,16 @@ else
 
 <!--Footer start-->
 <div class="row footer">
-<div class="col-md-3 box">
+<!-- <div class="col-md-3 box">
 <a href="#" target="_blank">About us</a>
-</div>
-<div class="col-md-3 box">
+</div> -->
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 
 </div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
 <!-- Modal For Developer-->
 <div class="modal fade title1" id="Developer">

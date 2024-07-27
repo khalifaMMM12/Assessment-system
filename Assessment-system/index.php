@@ -176,15 +176,15 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 
 <!--Footer start-->
 <div class="row footer">
-<div class="col-md-3 box">
+<!-- <div class="col-md-3 box">
 <a href="#" target="_blank">About us</a>
-</div>
-<div class="col-md-3 box">
+</div> -->
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 </div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
 <!-- Modal For Developer-->
 <div class="modal fade title1" id="Developer">
@@ -202,7 +202,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 		 <img src="image/MMM.jpg" width=100 height=100 alt="Khalifa" class="img-rounded">
 		 </div>
 		 <div class="col-md-5">
-		<a href="https://twitter.com/KhalifaMMM4" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Twitter">@Khalifammm4</a>
+		<a href="https://twitter.com/KhalifaMMM4" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Twitter">Twitter @Khalifammm4</a>
 		<h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+234 7065419600</h4>
 		<h4 style="font-family:'typo' ">Khalifasitemsn@gmail.com</h4>
 		<h4 style="font-family:'typo' ">From Al-qalam University, Department of Software Engineering and Cyber Security </h4></div></div>

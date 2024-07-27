@@ -83,6 +83,7 @@ width:100px;
 
 .form-horizontal {
     background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);

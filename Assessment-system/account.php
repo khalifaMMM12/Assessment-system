@@ -73,9 +73,9 @@ echo '<span class="pull-right top title1" ><span class="log1"><span class="glyph
 		</ul>
             <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Enter tag ">
+          <!-- <input type="text" class="form-control" placeholder="Enter tag "> -->
         </div>
-        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Search</button>
+        <!-- <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Search</button> -->
       </form>
       </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -137,27 +137,30 @@ var countdownTimer = setInterval('secondPassed()', 1000);
 
 <!--quiz start-->
 <?php
-if(@$_GET['q']== 'quiz' && @$_GET['step']== 2) {
-$eid=@$_GET['eid'];
-$sn=@$_GET['n'];
-$total=@$_GET['t'];
-$q=mysqli_query($con,"SELECT * FROM questions WHERE eid='$eid' AND sn='$sn' " );
-echo '<div class="panel" style="margin:5%">';
-while($row=mysqli_fetch_array($q) )
-{
-$qns=$row['qns'];
-$qid=$row['qid'];
-echo '<b>Question &nbsp;'.$sn.'&nbsp;::<br />'.$qns.'</b><br /><br />';
-}
+if (@$_GET['q'] == 'quiz' && @$_GET['step'] == 2) {
+  $eid = @$_GET['eid'];
+  $sn = @$_GET['n'];
+  $total = @$_GET['t'];
+  $q = mysqli_query($con, "SELECT * FROM questions WHERE eid='$eid' AND sn='$sn' LIMIT 1");
+  echo '<div class="panel" style="margin:5%">';
+  while ($row = mysqli_fetch_array($q)) {
+      $qns = $row['qns'];
+      $qid = $row['qid'];
+      echo '<b>Question &nbsp;' . $sn . '&nbsp;::<br/>' . $qns . '</b><br/><br/>';
+  }
+  $count_query = mysqli_query($con, "SELECT COUNT(*) as total FROM questions WHERE eid='$eid'");
+  $row = mysqli_fetch_array($count_query);
+  $total_questions = $row['total'];
+
 $q=mysqli_query($con,"SELECT * FROM options WHERE qid='$qid' " );
 echo '<form action="update.php?q=quiz&step=2&eid='.$eid.'&n='.$sn.'&t='.$total.'&qid='.$qid.'" method="POST"  class="form-horizontal">
-<br />';
+<br/>';
 
 while($row=mysqli_fetch_array($q) )
 {
 $option=$row['option'];
 $optionid=$row['optionid'];
-echo'<input type="radio" name="ans" value="'.$optionid.'">'.$option.'<br /><br />';
+echo'<input type="radio" name="ans" value="'.$optionid.'">'.$option.'<br/><br/>';
 }
 echo'<br /><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;Submit</button></form></div>';
 //header("location:dash.php?q=4&step=2&eid=$id&n=$total");
@@ -249,15 +252,15 @@ echo '</table></div></div>';}
 </div></div></div></div>
 <!--Footer start-->
 <div class="row footer">
-<div class="col-md-3 box">
+<!-- <div class="col-md-3 box">
 <a href="#" target="_blank">About us</a>
-</div>
-<div class="col-md-3 box">
+</div> -->
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="#" data-toggle="modal" data-target="#Developer">Developer</a>
 </div>
-<div class="col-md-3 box">
+<div class="col-md-4 box">
 <a href="feedback.php" target="_blank">Feedback</a></div></div>
 <!-- Modal For Developer-->
 <div class="modal fade title1" id="Developer">
