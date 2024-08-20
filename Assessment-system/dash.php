@@ -159,19 +159,20 @@ echo  '<div class="panel"><div class="table-responsive"><table class="table tabl
 <tr><td><b>S.N.</b></td><td><b>Name</b></td><td><b>Gender</b></td><td><b>School</b></td><td><b>Email</b></td><td><b>Mobile</b></td><td></td></tr>';
 $c=1;
 while($row = mysqli_fetch_array($result)) {
-	$name = $row['name'];
-	$mob = $row['mob'];
-	$gender = $row['gender'];
+    $name = $row['name'];
+    $mob = $row['mob'];
+    $gender = $row['gender'];
     $email = $row['email'];
-	$School = $row['School'];
+    $School = $row['School'];
 
-	echo '<tr><td>'.$c++.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$School.'</td><td>'.$email.'</td><td>'.$mob.'</td>
-	<td><a title="Delete User" href="update.php?demail='.$email.'"><b><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></b></a></td></tr>';
+    echo '<tr><td>'.$c++.'</td><td>'.$name.'</td><td>'.$gender.'</td><td>'.$School.'</td><td>'.$email.'</td><td>'.$mob.'</td>
+    <td><a title="Delete User" href="update.php?demail='.$email.'" onclick="return confirm(\'Are you sure you want to delete this user?\')"><b><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></b></a></td></tr>';
 }
 $c=0;
 echo '</table></div></div>';
 
 }?>
+
 <!--user end-->
 
 <!--feedback start-->
@@ -387,19 +388,20 @@ echo  '<div class="panel"><div class="table-responsive"><table class="table tabl
 <tr><td><b>S.N.</b></td><td><b>Topic</b></td><td><b>Total question</b></td><td><b>Marks</b></td><td><b>Time limit</b></td><td></td></tr>';
 $c=1;
 while($row = mysqli_fetch_array($result)) {
-	$title = $row['title'];
-	$total = $row['total'];
-	$sahi = $row['sahi'];
+    $title = $row['title'];
+    $total = $row['total'];
+    $sahi = $row['sahi'];
     $time = $row['time'];
-	$eid = $row['eid'];
-	echo '<tr><td>'.$c++.'</td><td>'.$title.'</td><td>'.$total.'</td><td>'.$sahi*$total.'</td><td>'.$time.'&nbsp;min</td>
-	<td><b><a href="update.php?q=rmquiz&eid='.$eid.'" class="pull-right btn sub1" style="margin:0px;background:red"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Remove</b></span></a></b></td></tr>';
+    $eid = $row['eid'];
+    echo '<tr><td>'.$c++.'</td><td>'.$title.'</td><td>'.$total.'</td><td>'.$sahi*$total.'</td><td>'.$time.'&nbsp;min</td>
+    <td><b><a href="update.php?q=rmquiz&eid='.$eid.'" class="pull-right btn sub1" style="margin:0px;background:red" onclick="return confirm(\'Are you sure you want to remove this quiz?\')"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Remove</b></span></a></b></td></tr>';
 }
 $c=0;
 echo '</table></div></div>';
 
 }
 ?>
+
 
 
 </div><!--container closed-->
